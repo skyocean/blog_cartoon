@@ -22,7 +22,7 @@ start_time <- "2018-01-01T00:00:00Z"
 end_time <- "2021-08-01T00:00:00Z"
 
 # Specify our query
-query <- "(Totoro OR Walle OR \"Wall-E\") lang:en is:verified -is:retweet -is:reply -is:quote"
+query <- "(Totoro OR Walle OR \"Wall E\") lang:en is:verified -is:retweet -is:reply -is:quote"
 
 # pull out the tweets
 tweets <- get_all_tweets(query, # this is the place you pass your query
