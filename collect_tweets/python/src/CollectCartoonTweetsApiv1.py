@@ -32,7 +32,7 @@ maxTweets = 100000 # Some arbitrary large number, you can change it to 100000000
 tweetsPerQry = 100  # this is the max the API permits
 
 # This is where we specify our query
-query = "Totoro OR Walle OR Wall-E" + "-filter:retweet" + "-filter:replies" + "is:verified" #Unfortunatedly, is:verified does not work
+query = "Totoro OR Walle OR \'Wall E\'" + "-filter:retweet" + "-filter:replies" + "is:verified" #Unfortunatedly, is:verified does not work
 
 # If results from a specific ID onwards are required, set since_id to that ID.
 # Otherwise default to no lower limit, go as far back as API allows
