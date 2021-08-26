@@ -21,7 +21,7 @@ start_time = datetime.datetime(2019, 5, 1, 0, 0, 0, 0, datetime.timezone.utc)
 end_time = datetime.datetime(2021, 7, 1, 0, 10, 0, 0, datetime.timezone.utc)
 
 # This is where we specify our query
-query = "(Totoro OR Walle OR\"Wall-E\") lang:en is:verified -is:retweet"
+query = "(Totoro OR Walle OR\"Wall E\") lang:en is:verified -is:retweet"
 
 # The search_all method call the full-archive search endpoint to get Tweets based on the query, start and end time
 search_results = client.search_all(query = query, start_time = start_time, end_time = end_time, max_results = 100)
