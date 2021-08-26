@@ -20,7 +20,7 @@ setup_twitter_oauth(consumer_key = 'xxx',
                     access_token = 'xxxx', 
                     access_secret = 'xxxx')
 #Specify the query for collecting tweets
-query <- "(Totoro OR Walle OR\"Wall-E\") -filter:retweets -filer:replies -filter:quote filter:verified"
+query <- "(Totoro OR Walle OR\"Wall E\") -filter:retweets -filer:replies -filter:quote filter:verified"
 
 #Get tweets data 
 tweets<- search_tweets2(query, lang ="en", n = Inf, retryonratelimit = TRUE)
